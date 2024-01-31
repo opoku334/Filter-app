@@ -1,0 +1,187 @@
+:root{
+  --lightGrayishCYan : hsl(180,52%,96%);
+  --lightGrayishTablets:hsl(180,31%,95%);
+  --darkGrayishCyan: hsl(180,8%,52%);
+  --veryDarkGrayishCyan:hsl(180,14%,20%);
+  --desaturatedDarkCyan:hsl(180,29%,50%);
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.9375rem;
+  box-sizing: border-box;
+
+
+}
+ul{
+  list-style: none;
+}
+*,::before,::after{
+  box-sizing: inherit;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+img{
+  max-width: 100%;
+}
+
+header{
+  background-image: url(images/bg-header-mobile.svg);
+  background-color: var(--desaturatedDarkCyan);
+
+
+  background-size: cover;
+  height: 156px;
+
+
+  background-position: center;
+
+
+}
+.job-info{
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 1em;
+  margin-top: 3em;
+
+}
+
+.job-companies img{
+  width: 3.5em;
+  position: absolute;
+
+  transform: translateY(-2.9em);
+ 
+}
+.company-stats,.job-details{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.job-companies{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1.6em;
+  position: relative;
+  border-radius: 0.2em;
+
+  
+
+}
+.featured{
+  border-left: 5px solid var(--desaturatedDarkCyan);
+}
+.company-name{
+  color: var(--desaturatedDarkCyan);
+}
+.new,.feature{
+  padding: 0.4em 0.6em;
+  background-color: var(--desaturatedDarkCyan);
+  border-radius: 2em;
+  text-align: center;
+  color: var(--lightGrayishTablets);
+}
+.feature{
+  background-color: var(--veryDarkGrayishCyan);
+}
+.company-info,.job-avaliability{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.position{
+  color: var(--veryDarkGrayishCyan);
+}
+.job-details{
+  color: var(--darkGrayishCyan);
+}
+
+.job-requirements ul{
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+
+}
+.job-requirements ul li,.name{
+  background-color: var(--lightGrayishTablets);
+  padding: 0.7em 1em;
+  border-radius: 0.2em;
+  font-weight: bolder;
+ 
+  color: var(--desaturatedDarkCyan);
+  
+}
+.job-requirements ul li{
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.job-requirements ul li:hover{
+  background-color: var(--desaturatedDarkCyan);
+  color: var(--lightGrayishCYan);
+}
+.filters{
+  background-color: white;
+
+  transform: translateY(-3em);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: 1em;
+  border-radius: 0.3em;
+
+}
+.filtering,.ware{
+  display: flex;
+  gap: 0.5;
+  flex-wrap: wrap;
+  /* padding: 0.5em; */
+  align-items: center;
+}
+.filtering{
+  gap: 1em;
+
+}
+.ware{
+  background-color: var(--lightGrayishCYan);
+  border-radius: 0.4em;
+  padding: 0.2em;
+}
+.ware button{
+  border: none;
+  color: red;
+  background-color: var(--desaturatedDarkCyan);
+  padding: 0.5em;
+
+}
+.filtering p{
+  cursor: pointer;
+}
+.filtering button{
+  transition: all 0.3s linear;
+  cursor: pointer;
+  padding: 0.2em;
+}
+.filtering button:hover{
+  background-color: var(--veryDarkGrayishCyan);
+}
+
+@media screen and (min-width:64rem) {
+
+  main{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .job-avaliability hr{
+    display: none;
+  }
+  .job-requirements{
+    align-self: end;
+    transform: translateY(-5em)
+
+    
+  }
+
+  
+}
